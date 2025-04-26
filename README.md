@@ -63,6 +63,8 @@ The main objective of this lab work is to apply regression techniques to predict
 
 ## How to Run
 
+### Step 1: Clone the Repository
+
 1. Clone this repository to your local machine:
 
     ```bash
@@ -70,15 +72,49 @@ The main objective of this lab work is to apply regression techniques to predict
     cd crab-age-prediction
     ```
 
-2. Install required dependencies (assuming you have Python and pip installed):
+### Step 2: Install Dependencies
+
+1. Install the required dependencies (assuming you have Python and pip installed):
 
     ```bash
     pip install -r requirements.txt
     ```
 
-3. Open the Jupyter notebook (`crab_age_prediction.ipynb`) in Google Colab or any Jupyter notebook environment.
+### Step 3: Upload the Dataset to Google Drive
 
-4. Follow the instructions within the notebook to load the dataset, preprocess it, train models, and evaluate them.
+1. **Upload the Dataset to Google Drive**:
+   - Go to your [Google Drive](https://drive.google.com/).
+   - Upload the file `ModifiedCrabAgePrediction.csv` to your Google Drive.
+   - Place it in the folder (for example, `MyDrive`), or directly in the root of your Google Drive.
+
+### Step 4: Mount Google Drive in Google Colab
+
+1. Open the notebook in [Google Colab](https://colab.research.google.com/).
+2. Run the following code to mount Google Drive:
+
+    ```python
+    from google.colab import drive
+    drive.mount('/content/drive')
+    ```
+
+3. After mounting, your Google Drive will be accessible in Colab under the path `/content/drive/MyDrive/`.
+
+### Step 5: Load the Dataset
+
+1. Update the path to your uploaded file and load the dataset into a pandas DataFrame:
+
+    ```python
+    import pandas as pd
+    DATA_DIR = "/content/drive/MyDrive/ModifiedCrabAgePrediction.csv"  # Adjust the path if needed
+    crabAge_df = pd.read_csv(DATA_DIR, header=0)
+    ```
+
+2. This will load the dataset into the `crabAge_df` DataFrame for further analysis and processing.
+
+### Step 6: Continue with the Project
+
+- After loading the data, you can follow the instructions in the notebook to preprocess the data, train the regression models, and evaluate their performance.
+
 
 ## Evaluation Criteria
 
