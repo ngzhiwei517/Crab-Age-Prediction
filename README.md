@@ -65,8 +65,8 @@ The main objective of this lab work is to apply regression techniques to predict
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/ngzhiwei517/Crab-Age-Prediction.git
-    cd crab-age-prediction
+    git clone https://github.com/ngzhiwei517/Sleep-Health-Analysis.git
+    cd Sleep-Health-Analysis
     ```
 
 2. Install required dependencies (assuming you have Python and pip installed):
@@ -75,9 +75,14 @@ The main objective of this lab work is to apply regression techniques to predict
     pip install -r requirements.txt
     ```
 
-3. Open the Jupyter notebook (`crab_age_prediction.ipynb`) in Google Colab or any Jupyter notebook environment.
+3. Open the Jupyter notebook (`sleep_health_analysis.ipynb`) in Google Colab or any Jupyter notebook environment.
 
-4. Follow the instructions within the notebook to load the dataset, preprocess it, train models, and evaluate them.
+4. Follow the instructions within the notebook to:
+    - Load the dataset
+    - Preprocess the data
+    - Train various machine learning models
+    - Evaluate model performance
+
 
 ## Evaluation Criteria
 
